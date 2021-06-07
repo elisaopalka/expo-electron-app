@@ -1,19 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TextInput } from 'react-native';
+import UselessTextInputMultiline from './component/UselessTextInputMultiline'
+import Pressing from './component/Pressing'
 
 export default function App() {
   return (
+    <ScrollView>
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>This is my App</Text>
+      <UselessTextInputMultiline/>
+      <Pressing/>
       <StatusBar style="auto" />
     </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    padding: 60,
+    flex: 4,
+    borderColor: 'black',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

@@ -1,11 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import {Provider} from 'react-redux';
+// import store from './store/store';
+
 import { StyleSheet, Text, View, ScrollView, TextInput } from 'react-native';
 import UselessTextInputMultiline from './component/UselessTextInputMultiline'
 import Pressing from './component/Pressing'
 
+//   import AddTask from './component/AddTask'
+
 export default function App() {
   return (
+    // <Provider store={store}>
     <ScrollView>
     <View style={styles.container}>
       <Text>This is my App</Text>
@@ -14,6 +20,7 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
     </ScrollView>
+    // </Provider>
   );
 }
 
